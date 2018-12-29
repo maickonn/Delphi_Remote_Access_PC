@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{27A03785-5822-4E03-A03F-0BD60469294E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Servidor\Access_PC.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Cliente\Access_PC_Client.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Access_PC">
+        <MSBuild Projects="Servidor\Access_PC.dproj"/>
+    </Target>
+    <Target Name="Access_PC:Clean">
+        <MSBuild Projects="Servidor\Access_PC.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Access_PC:Make">
+        <MSBuild Projects="Servidor\Access_PC.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Access_PC_Client">
+        <MSBuild Projects="Cliente\Access_PC_Client.dproj"/>
+    </Target>
+    <Target Name="Access_PC_Client:Clean">
+        <MSBuild Projects="Cliente\Access_PC_Client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Access_PC_Client:Make">
+        <MSBuild Projects="Cliente\Access_PC_Client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Access_PC;Access_PC_Client"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Access_PC:Clean;Access_PC_Client:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Access_PC:Make;Access_PC_Client:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
