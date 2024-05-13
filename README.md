@@ -1,20 +1,18 @@
-# Delphi_Remote_Access_PC
-Remote access in Delphi 7 and Delphi XE5 (With sharer files, CHAT and Forms Inheritance)
 
-Acesso Remoto em Delphi 7 e Delphi XE5 (Com Compartilhador de Arquivos, CHAT e Herança de Formulários) 
+## Aviso de Descontinuação
+Este projeto foi descontinuado e, portanto, arquivado.
 
+---
+## Nota de Esclarecimento
+Lamentavelmente, alguns indivíduos de má índole têm usado os códigos deste projeto para criar malwares. Quero deixar claro que não apoio nem compactuo com essas atividades.
 
+Peço desculpas por qualquer inconveniente que isso possa ter causado. Não era minha intenção que este projeto fosse usado de forma prejudicial.
 
-				Estas fontes foram criadas por Maickonn Richard.
-				Contato: maickonnrichard@gmail.com
-				
-				A distribuição destas fontes são gratuitas!
-				
-				NÃO ME RESPONSABILIZO PELO MAU USO DESTAS FONTES.
-				
-				GitHub: https://www.github.com/Maickonn
+Já considerei remover este projeto do GitHub, mas isso não resolveria o problema, uma vez que vários forks foram criados e trechos de código estão disseminados pela internet.
 
-------------------------------------------------------------------------------
+---
+
+O acesso remoto foi escrito em **Delphi 7** e **Delphi XE5**.
 
 <strong>Recursos:</strong>
 * Acesso Remoto com algorítimo RFB (Captura apenas o que foi alterado na tela).
@@ -25,7 +23,7 @@ Acesso Remoto em Delphi 7 e Delphi XE5 (Com Compartilhador de Arquivos, CHAT e H
 
 ------------------------------------------------------------------------------
 
-#Todos os componentes utilizados são nativos do próprio Delphi.
+*Todos os componentes utilizados são nativos do próprio Delphi.*
 
 Provavelmente quando você abrir o projeto, vai aparecer uma mensagem avisando que falta componente.
 O que você deve fazer é seguir os seguintes passos:
